@@ -16,6 +16,7 @@ Public Class Form1
    "Maisstärke        ; 191  ;10.6; 143; 420; 22",
    "Quellstärkeu      ; 197  ; 8.5;  50; 390; 14",
    "Kartoffelstärke   ; 3041 ; 7.8;  43; 420; --",
+   "Sucker            ; 229  ; 8.5; 138; 480; <30",
    "Test data         ; test ; 8.0; 150; 999; --"}
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click, TabPage1.Enter, NumericUpDown5.ValueChanged, NumericUpDown3.ValueChanged, NumericUpDown2.ValueChanged, NumericUpDown4.ValueChanged, NumericUpDown1.ValueChanged, NumericUpDown6.ValueChanged, ComboBox1.SelectedIndexChanged, NumericUpDown7.ValueChanged, NumericUpDown8.ValueChanged
         Dim slender, vol, Length, duct_L, dia As Double
@@ -101,7 +102,11 @@ Public Class Form1
         TextBox6.Text &= "published nomographs And these are still available to be used in the UK where it can be proven it provides a higher level of safety Or there Is a case that 'state Of the Art'"
         TextBox6.Text &= "can be demonstrated in preference to using EN14491:  2012. "
 
-        TextBox9.Text = "German dust database" & vbCrLf & "http://staubex.ifa.dguv.de/"
+        TextBox9.Text = "German dust database" & vbCrLf & "http://staubex.ifa.dguv.de/" & vbCrLf
+        TextBox9.Text &= "http://www.dguv.de/ifa/gestis/gestis-staub-ex/index.jsp" & vbCrLf
+        TextBox9.Text &= "http://www.dguv.de/medien/ifa/de/gestis/staub_ex/manual45.pdf" & vbCrLf
+        TextBox9.Text &= "http://www.gsbl.de/" & vbCrLf
+        TextBox9.Text &= "https://de.wikipedia.org/wiki/Explosionsschutz#St.C3.A4ube"
 
         TextBox13.Text = "Cyclones require some special attention due to the difficulty of locating the explosion vent."
         TextBox13.Text &= "This Is due to internal wall surfaces being critical to the efficient operation of the cyclone." & vbCrLf

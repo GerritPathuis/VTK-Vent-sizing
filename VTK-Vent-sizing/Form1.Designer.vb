@@ -22,9 +22,12 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.TextBox15 = New System.Windows.Forms.TextBox()
+        Me.Label18 = New System.Windows.Forms.Label()
         Me.NumericUpDown8 = New System.Windows.Forms.NumericUpDown()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
@@ -72,8 +75,6 @@ Partial Class Form1
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.TextBox14 = New System.Windows.Forms.TextBox()
         Me.TextBox13 = New System.Windows.Forms.TextBox()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.TextBox15 = New System.Windows.Forms.TextBox()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox4.SuspendLayout()
@@ -130,6 +131,24 @@ Partial Class Form1
         Me.GroupBox4.TabIndex = 23
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "For cyclones only"
+        '
+        'TextBox15
+        '
+        Me.TextBox15.BackColor = System.Drawing.Color.Orange
+        Me.TextBox15.Location = New System.Drawing.Point(246, 37)
+        Me.TextBox15.Name = "TextBox15"
+        Me.TextBox15.Size = New System.Drawing.Size(58, 20)
+        Me.TextBox15.TabIndex = 21
+        Me.TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(9, 38)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(172, 13)
+        Me.Label18.TabIndex = 23
+        Me.Label18.Text = "Reduced explosion press max [bar]"
         '
         'NumericUpDown8
         '
@@ -197,9 +216,9 @@ Partial Class Form1
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(9, 74)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(62, 13)
+        Me.Label13.Size = New System.Drawing.Size(180, 13)
         Me.Label13.TabIndex = 18
-        Me.Label13.Text = "IFA Stoff-Nr"
+        Me.Label13.Text = "IFA, GESTIS databank ZVG Stoff-Nr"
         '
         'TextBox3
         '
@@ -560,7 +579,7 @@ Partial Class Form1
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(369, 576)
+        Me.TabPage2.Size = New System.Drawing.Size(369, 597)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Info"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -570,7 +589,7 @@ Partial Class Form1
         Me.TextBox9.Location = New System.Drawing.Point(8, 297)
         Me.TextBox9.Multiline = True
         Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(353, 44)
+        Me.TextBox9.Size = New System.Drawing.Size(353, 96)
         Me.TextBox9.TabIndex = 3
         Me.TextBox9.Text = "German dust database" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -609,7 +628,7 @@ Partial Class Form1
         Me.TabPage3.Location = New System.Drawing.Point(4, 22)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(369, 576)
+        Me.TabPage3.Size = New System.Drawing.Size(369, 597)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Cyclone"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -620,7 +639,7 @@ Partial Class Form1
         Me.TextBox14.Location = New System.Drawing.Point(3, 181)
         Me.TextBox14.Multiline = True
         Me.TextBox14.Name = "TextBox14"
-        Me.TextBox14.Size = New System.Drawing.Size(363, 392)
+        Me.TextBox14.Size = New System.Drawing.Size(363, 413)
         Me.TextBox14.TabIndex = 1
         '
         'TextBox13
@@ -632,32 +651,15 @@ Partial Class Form1
         Me.TextBox13.Size = New System.Drawing.Size(363, 178)
         Me.TextBox13.TabIndex = 0
         '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(9, 38)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(172, 13)
-        Me.Label18.TabIndex = 23
-        Me.Label18.Text = "Reduced explosion press max [bar]"
-        '
-        'TextBox15
-        '
-        Me.TextBox15.BackColor = System.Drawing.Color.Orange
-        Me.TextBox15.Location = New System.Drawing.Point(246, 37)
-        Me.TextBox15.Name = "TextBox15"
-        Me.TextBox15.Size = New System.Drawing.Size(58, 20)
-        Me.TextBox15.TabIndex = 21
-        Me.TextBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(377, 623)
         Me.Controls.Add(Me.TabControl1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "VTK ATEX Venting sizing dd 30-12-2016"
         Me.TabControl1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.GroupBox4.ResumeLayout(False)

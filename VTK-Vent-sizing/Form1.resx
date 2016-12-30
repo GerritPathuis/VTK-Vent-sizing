@@ -117,8 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="TextBox6.Text" xml:space="preserve">
-    <value>Over the years various modifications to the nomographs were made mainly by extending the range of applicability and eventually formula where produced in VDI 3673.  It is the same basic formula that was used in VDI 3673, NFPA 68 and EN14491 up until 2007 when NFPA 68 decided to use a total different method.  However the formula used the EN14491: 2012 is the same basic formula that VDI 3673 uses. It should also be noted that in circa 1989 the Institute of Chemical Engineers (IChemE) published nomographs and these are still available to be used in the UK where it can be proven it 
- provides a higher level of safety or there is a case that “state of the Art” can be demonstrated in preference to using EN14491:2012. </value>
-  </data>
 </root>

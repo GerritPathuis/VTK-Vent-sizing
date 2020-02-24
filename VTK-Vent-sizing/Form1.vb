@@ -93,7 +93,8 @@ Public Class Form1
         Next hh
         ComboBox1.SelectedIndex = 2
 
-        TextBox5.Text = "Based on: SHAPA TECHNICAL PAPER 10 (Revised)"
+        TextBox5.Text = "Based on: SHAPA TECHNICAL PAPER 10 (Revised)" & vbCrLf
+        TextBox5.Text &= "Based on: EN14491 2012"
 
         TextBox6.Text = "Over the years various modifications To the nomographs were made mainly by extending the range Of applicability And eventually formula where produced In VDI 3673."
         TextBox6.Text &= "It Is the same basic formula that was used In VDI 3673, NFPA 68 And EN14491 up until 2007 When NFPA 68 decided To use a total different method."
